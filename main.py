@@ -43,6 +43,9 @@ def reaction_to_buttons(message: Message):
         bot.send_message(chat_id, f"Admin: {admin}")
     elif message.text == 'ID ✅':
         bot.send_message(chat_id, f"Sizning id: {message.from_user.id}")
+    else:
+        bot.send_message(chat_id, "Bunday buyruq mavjud emas!"
+                                  "<i>Menyudagi buyruqlardan foydalaning!</i>", parse_mode='html')
 
 
 bot.infinity_polling()
